@@ -1,0 +1,152 @@
+/*CONTACT*/
+
+#contact_section {
+    height: 150vh;
+    background: #000000;
+    display: flex;
+} 
+
+/*Contact form*/
+
+.contact_form_container h4{
+    margin: 15em 0 1em 5em;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.6em;
+}
+
+
+.form {
+    margin: 1em 0 0 9em ;
+    display: flex;
+    flex-direction: column;  
+}
+
+/*Form text*/
+.form label {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    color: #ffff;    
+}
+
+.form_input_textarea, .submit_button {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    background:#e06924;
+    color:#632501;
+    font-size: 1.2em; 
+}
+
+.form textarea {
+    resize: none;
+    max-height: 100px;
+}
+
+.form_input_textarea::placeholder {
+    color: #632501;
+}
+
+.submit_button{
+    width: 50%;
+    padding: 0.5em;
+    margin: auto;
+    font-size: 1.3em;
+    color:#ffffff;
+    background-color: #8d3400;
+}
+
+.submit_button:hover{
+    background-color: #cc4d04;
+}
+
+
+/*Social media*/
+.social_media_container {
+    margin-top: 25em;
+}
+
+.social_media_icon {
+    margin: 3em;
+    height: 6em;
+    width: 6em;
+    background-color: #00000000;
+    border-radius: 50%;   
+}
+
+.instagram_icon {
+    background: linear-gradient(#ffffff0c,  transparent), url(../images/instagram_icon.png) no-repeat center;
+    background-size: 50%;
+}
+
+.github_icon {
+    background: linear-gradient(#ffffff0c,  transparent), url(../images/github_icon.png) no-repeat center;
+    background-size: 50%;
+}
+
+.telegram_icon {
+    background: linear-gradient(#ffffff0c,  transparent), url(../images/telegram_icon.png) no-repeat center;
+    background-size: 50%;
+}
+
+.social_media_link {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_img_container {
+    display: none;
+}
+
+
+
+/*Footer*/
+#footer_section {
+    height: 3em;
+    background-color: #000000;
+}
+.footer_content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border-top: #ffff solid 0.2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_content p {
+    color: #ffffff7c;
+    font-weight: lighter;
+}
+
+
+@media (min-width: 1000px) {
+    #contact_section {
+        height: 120vh;
+    } 
+
+    .contact_form_container h4{
+        margin-top: 5em 
+       
+    }
+    
+
+    .contact_img_container {
+        display: block;
+        margin: auto;
+    }
+
+    .submit_button:hover{
+        background-color: #cc4d04;
+    }
+
+    .social_media_container {
+        margin-top: 10em;
+    }
+    
+}
