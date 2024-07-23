@@ -1,0 +1,177 @@
+
+/*       Font source       */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+
+/*       body adjustement       */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Signika", sans-serif;   
+    scroll-behavior: smooth; 
+    margin: 0;
+} 
+
+body {
+    background-color: #000000;
+}
+
+/*       Homepage       */
+#container {
+    height: 100vh;
+}
+
+/*       title       */
+
+.names {
+    color: #ffffff;
+    padding: 30%  20% 2em 20%;
+    text-align: center;
+}
+
+.first_name {
+    margin-top: 1em;
+    font-size: 5em;
+    letter-spacing: 0.15em; 
+}
+
+.last_name {
+    display: none;
+}
+
+.main_p {  
+    padding-top: 0.5em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+
+#future_word_span { 
+    font-weight: bold;
+    color: #E06924;
+}
+
+/*      navigation bar      */
+#nav {  
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}  
+
+.nav_items_container {
+    display: flex;
+    height: 4em;
+    background-color:#ffffff40;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+
+}
+.items {
+    margin:  0.5em 0.5em ;
+    width: 100%;
+    list-style: none;    
+}
+
+.items a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  
+    
+}
+
+.items img {
+    margin:0 30%;
+}
+
+/*      scroll down icon      */
+
+.scroll_down_icon {
+    margin-left: 45%;
+    height: 3em;
+}
+
+
+@media  (min-width:1000px){
+
+    #container {
+        background: url(../images/background_image.png) no-repeat right center;
+    }
+
+    /*       title       */
+
+    .names {
+        color: #ffffff;
+        padding: 5% 20%;
+        text-align: left;
+        
+    }
+
+    .first_name {
+        width: fit-content; 
+    }
+    .first_name:hover {
+        background: linear-gradient(62deg, #e06924 50%, #f59965 100%);
+        background-clip: text;   /*AGREGAR*/
+        color: transparent;
+        
+    }
+
+    .last_name {
+        display: block;
+        font-size: 4em;
+        letter-spacing: 0.5em;
+        font-weight: lighter;
+    }
+
+   
+    .main_p {  
+        font-size: 1.26em; 
+    }
+
+    /*      navigation bar      */
+    #nav{
+        margin: 2em 0 0 2em;
+        height: 100%;
+        width: fit-content;
+    
+    }
+    .nav_items_container{
+        flex-direction: column;
+        padding: 0;
+        margin: auto 1em;
+        height: fit-content;
+        width: fit-content;
+        backdrop-filter: blur(0);
+        background-color: transparent;
+    }
+
+    .items{
+        margin: 2.4em 0;
+        padding: 1px;
+        background-image: linear-gradient(to right, #ffffff0c,  transparent);
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+
+    }
+    
+    .links:hover {
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+    
+    }
+
+    .items img {
+        margin: 10px ;
+       
+    }
+    
+
+    /*      scroll down icon      */
+
+    .scroll_down_icon {
+        margin-left: 24em;
+    }
+
+}
